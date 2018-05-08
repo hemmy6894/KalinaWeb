@@ -1,0 +1,13 @@
+Create database fabiak;
+use fabiak;
+
+create table service(
+	service_id int not null auto_increment primary key,
+    service_body text
+);
+
+create table service_desc(
+	service_desc_id int not null auto_increment primary key,
+    service_id int,
+    service_desc_body text
+);
